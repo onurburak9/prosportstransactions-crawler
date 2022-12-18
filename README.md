@@ -67,19 +67,19 @@ At least one the transaction type should be `true` or code would not work!
 #### Begin/End Dates(optional)
 User can provide begin and/or end dates in this format: YYYY-MM-DD
 ```sh
---beginDate='2013-02-30' --endDate='2022-03-30'
+--beginDate="2013-02-30" --endDate="2022-03-30"
 ```
 
 #### Example
 ```sh
- npm start -- --player="Carmelo Anthony" --player="J.R. Smith" --team="knicks" --team="nuggets" --beginDate='2010-01-30' --endDate='2022-08-30' --PlayerMovementChkBx=true --ILChkBx=true
+ npm start -- --player="Carmelo Anthony" --player="J.R. Smith" --team="knicks" --team="nuggets" --beginDate="2010-01-30" --endDate="2022-08-30" --PlayerMovementChkBx=true --ILChkBx=true
 ```
 This call would create these request objects and parse the website accordingly. The results would be saved under `/storage` folder.
 ```json
 [
   {
-    "player": 'Carmelo+Anthony',
-    "team": 'knicks',
+    "player": "Carmelo+Anthony",
+    "team": "knicks",
     "config": {
       "PlayerMovementChkBx": true,
       "ILChkBx": true,
@@ -89,12 +89,12 @@ This call would create these request objects and parse the website accordingly. 
       "DisciplinaryChkBx": false,
       "LegalChkBx": false
     },
-    "dates": { "beginDate": '2010-01-30', "endDate": '2022-08-30' },
-    "address": 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=Carmelo+Anthony&Team=knicks&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
+    "dates": { "beginDate": "2010-01-30", "endDate": "2022-08-30" },
+    "address": "https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=Carmelo+Anthony&Team=knicks&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0"
   },
   {
-    "player": 'Carmelo+Anthony',
-    "team": 'nuggets',
+    "player": "Carmelo+Anthony",
+    "team": "nuggets",
     "config": {
       "PlayerMovementChkBx": true,
       "ILChkBx": true,
@@ -104,12 +104,12 @@ This call would create these request objects and parse the website accordingly. 
       "DisciplinaryChkBx": false,
       "LegalChkBx": false
     },
-    "dates": { "beginDate": '2010-01-30', "endDate": '2022-08-30' },
-    "address": 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=Carmelo+Anthony&Team=nuggets&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
+    "dates": { "beginDate": "2010-01-30", "endDate": "2022-08-30" },
+    "address": "https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=Carmelo+Anthony&Team=nuggets&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0"
   },
   {
-    "player": 'J.R.+Smith',
-    "team": 'knicks',
+    "player": "J.R.+Smith",
+    "team": "knicks",
     "config": {
       "PlayerMovementChkBx": true,
       "ILChkBx": true,
@@ -119,12 +119,12 @@ This call would create these request objects and parse the website accordingly. 
       "DisciplinaryChkBx": false,
       "LegalChkBx": false
     },
-    "dates": { "beginDate": '2010-01-30', "endDate": '2022-08-30' },
-    "address": 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=J.R.+Smith&Team=knicks&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
+    "dates": { "beginDate": "2010-01-30", "endDate": "2022-08-30" },
+    "address": "https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=J.R.+Smith&Team=knicks&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0"
   },
   {
-    "player": 'J.R.+Smith',
-    "team": 'nuggets',
+    "player": "J.R.+Smith",
+    "team": "nuggets",
     "config": {
       "PlayerMovementChkBx": true,
       "ILChkBx": true,
@@ -134,8 +134,8 @@ This call would create these request objects and parse the website accordingly. 
       "DisciplinaryChkBx": false,
       "LegalChkBx": false
     },
-    "dates": { "beginDate": '2010-01-30', "endDate": '2022-08-30' },
-    "address": 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=J.R.+Smith&Team=nuggets&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
+    "dates": { "beginDate": "2010-01-30", "endDate": "2022-08-30" },
+    "address": "https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=J.R.+Smith&Team=nuggets&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0"
   }
 ]
 ```
@@ -617,11 +617,11 @@ This call would create these request objects and parse the website accordingly. 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Don"t forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+3. Commit your Changes (`git commit -m "Add some AmazingFeature"`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
