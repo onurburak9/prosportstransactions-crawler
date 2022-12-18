@@ -1,0 +1,15 @@
+{
+  "name": "bb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node --no-warnings index",
+    "dev-start": "node index"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "yargs": "^17.6.2"
+  }
+}
