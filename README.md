@@ -2,49 +2,7 @@
 <div align="center">
 
 <h3 align="center">prosportstransactions.com parser</h3>
-
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
-  </p>
 </div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li>
-        <a href="#usage">Usage</a>
-        <ul>
-            <li><a href="#prerequisites">Prerequisites</a></li>
-            <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -92,13 +50,13 @@ At least one the transaction type should be `true` or code would not work!
 
 ```json
 {
-    PlayerMovementChkBx: "Player/Coach/Executive movement (trades, free agent signings, draft picks, etc.)",
-    ILChkBx: "Movement to/from injured/inactive list (IL)",
-    NBADLChkBx: "NBADL / G League movements",
-    InjuriesChkBx: "Missed games due to injury",
-    PersonalChkBx: "Missed games due to personal reasons",
-    DisciplinaryChkBx: "Disciplinary actions (suspensions, fines, etc.)",
-    LegalChkBx: "Legal/Criminal incidents"
+    "PlayerMovementChkBx": "Player/Coach/Executive movement (trades, free agent signings, draft picks, etc.)",
+    "ILChkBx": "Movement to/from injured/inactive list (IL)",
+    "NBADLChkBx": "NBADL / G League movements",
+    "InjuriesChkBx": "Missed games due to injury",
+    "PersonalChkBx": "Missed games due to personal reasons",
+    "DisciplinaryChkBx": "Disciplinary actions (suspensions, fines, etc.)",
+    "LegalChkBx": "Legal/Criminal incidents"
 }
 ```
 
@@ -120,64 +78,64 @@ This call would create these request objects and parse the website accordingly. 
 ```json
 [
   {
-    player: 'Carmelo+Anthony',
-    team: 'knicks',
-    config: {
-      PlayerMovementChkBx: true,
-      ILChkBx: true,
-      NBADLChkBx: false,
-      InjuriesChkBx: false,
-      PersonalChkBx: false,
-      DisciplinaryChkBx: false,
-      LegalChkBx: false
+    "player": 'Carmelo+Anthony',
+    "team": 'knicks',
+    "config": {
+      "PlayerMovementChkBx": true,
+      "ILChkBx": true,
+      "NBADLChkBx": false,
+      "InjuriesChkBx": false,
+      "PersonalChkBx": false,
+      "DisciplinaryChkBx": false,
+      "LegalChkBx": false
     },
-    dates: { beginDate: '2010-01-30', endDate: '2022-08-30' },
-    address: 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=Carmelo+Anthony&Team=knicks&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
+    "dates": { "beginDate": '2010-01-30', "endDate": '2022-08-30' },
+    "address": 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=Carmelo+Anthony&Team=knicks&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
   },
   {
-    player: 'Carmelo+Anthony',
-    team: 'nuggets',
-    config: {
-      PlayerMovementChkBx: true,
-      ILChkBx: true,
-      NBADLChkBx: false,
-      InjuriesChkBx: false,
-      PersonalChkBx: false,
-      DisciplinaryChkBx: false,
-      LegalChkBx: false
+    "player": 'Carmelo+Anthony',
+    "team": 'nuggets',
+    "config": {
+      "PlayerMovementChkBx": true,
+      "ILChkBx": true,
+      "NBADLChkBx": false,
+      "InjuriesChkBx": false,
+      "PersonalChkBx": false,
+      "DisciplinaryChkBx": false,
+      "LegalChkBx": false
     },
-    dates: { beginDate: '2010-01-30', endDate: '2022-08-30' },
-    address: 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=Carmelo+Anthony&Team=nuggets&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
+    "dates": { "beginDate": '2010-01-30', "endDate": '2022-08-30' },
+    "address": 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=Carmelo+Anthony&Team=nuggets&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
   },
   {
-    player: 'J.R.+Smith',
-    team: 'knicks',
-    config: {
-      PlayerMovementChkBx: true,
-      ILChkBx: true,
-      NBADLChkBx: false,
-      InjuriesChkBx: false,
-      PersonalChkBx: false,
-      DisciplinaryChkBx: false,
-      LegalChkBx: false
+    "player": 'J.R.+Smith',
+    "team": 'knicks',
+    "config": {
+      "PlayerMovementChkBx": true,
+      "ILChkBx": true,
+      "NBADLChkBx": false,
+      "InjuriesChkBx": false,
+      "PersonalChkBx": false,
+      "DisciplinaryChkBx": false,
+      "LegalChkBx": false
     },
-    dates: { beginDate: '2010-01-30', endDate: '2022-08-30' },
-    address: 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=J.R.+Smith&Team=knicks&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
+    "dates": { "beginDate": '2010-01-30', "endDate": '2022-08-30' },
+    "address": 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=J.R.+Smith&Team=knicks&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
   },
   {
-    player: 'J.R.+Smith',
-    team: 'nuggets',
-    config: {
-      PlayerMovementChkBx: true,
-      ILChkBx: true,
-      NBADLChkBx: false,
-      InjuriesChkBx: false,
-      PersonalChkBx: false,
-      DisciplinaryChkBx: false,
-      LegalChkBx: false
+    "player": 'J.R.+Smith',
+    "team": 'nuggets',
+    "config": {
+      "PlayerMovementChkBx": true,
+      "ILChkBx": true,
+      "NBADLChkBx": false,
+      "InjuriesChkBx": false,
+      "PersonalChkBx": false,
+      "DisciplinaryChkBx": false,
+      "LegalChkBx": false
     },
-    dates: { beginDate: '2010-01-30', endDate: '2022-08-30' },
-    address: 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=J.R.+Smith&Team=nuggets&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
+    "dates": { "beginDate": '2010-01-30', "endDate": '2022-08-30' },
+    "address": 'https://www.prosportstransactions.com/basketball/Search/SearchResults.php?Player=J.R.+Smith&Team=nuggets&BeginDate=2010-01-30&EndDate=2022-08-30&PlayerMovementChkBx=yes&ILChkBx=yes&start=0'
   }
 ]
 ```
